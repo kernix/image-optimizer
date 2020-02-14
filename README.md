@@ -27,6 +27,10 @@ When `/tmp/images` is the local images folder.
 | -h -–help  | Script help |
 | -f –-force | Force scripts for all without taking in considiration update time |
 
+```
+docker run --rm -v "/tmp/images:/var/www" kernix/image-optimizer:1.0 --max-format=1000x800 --png-quality=70-80 --jpg-quality=85% --max-memory=2GiB --max-disc-space=1GiB
+```
+
 
 
 
