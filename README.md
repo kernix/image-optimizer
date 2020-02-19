@@ -22,13 +22,13 @@ When `/tmp/images` is the local images folder.
 | --max-format | Max image format [WidthxHeight] (default = 1000x800) |
 | --max-memory | Max memory usage (default : 2GiB) |
 | --max-disc-space | Max disk space usage (default : 1GiB) |
-| --jpg-quality | JPG quality (default : 85%) |
-| --png-quality | PNG quality (default : 70-80) |
+| --jpg-quality | JPG quality to optimize JPG/JPEG (ex. : 85) |
+| --png-quality | PNG quality to optimize PNG (ex. : 70-80) |
 | -h -–help  | Script help |
 | -f –-force | Force scripts for all without taking in considiration update time |
 
 ```
-docker run --rm -v "/tmp/images:/var/www" kernix/image-optimizer:1.0 --max-format=1000x800 --png-quality=70-80 --jpg-quality=85% --max-memory=2GiB --max-disc-space=1GiB
+docker run --rm -v "/tmp/images:/var/www" kernix/image-optimizer:1.0 --max-format=1000x800 --png-quality=70-80 --jpg-quality=85 --max-memory=2GiB --max-disc-space=1GiB
 ```
 
 
